@@ -15,9 +15,7 @@ const AboutMe = () => {
             <li>I love wriginh blogs, you can check out theh 
                 
                
-                <a href ="http://norbeenbaral.blogspot.com">
-                here 
-
+                <a href ="http://norbeenbaral.blogspot.com"> here
                 </a>
 
 
