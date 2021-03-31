@@ -68,6 +68,12 @@ nav {
         
     }
 
+    li:hover{
+    background-color:#83c5be;
+    border-radius:15%;
+}
+
+
   
 }
 
