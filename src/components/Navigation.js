@@ -21,7 +21,7 @@ const Navigation = () => {
             <nav>
            
             <motion.h1 
-            animate={{ x: 700 }}
+            animate={{ x: 650 }}
             transition={{ ease: "easeOut", duration: 8 }}
             >
             <Link className="link" to="/"> Nabin Baral- Portfolio Website</Link>

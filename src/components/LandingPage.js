@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import graduation from '../img/graduation.JPG'
 import {Link}  from "react-router-dom";
 import {
     motion,
