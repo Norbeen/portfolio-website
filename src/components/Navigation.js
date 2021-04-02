@@ -7,7 +7,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
-
+import {motion} from 'framer-motion'
 
 const Navigation = () => {
 
@@ -20,13 +20,16 @@ const Navigation = () => {
         <StyledNav>
             <nav>
            
-            <h1 >
-            <Link className="link" to="/"> Nabin Baral</Link>
-            </h1>
+            <motion.h1 
+            animate={{ x: 700 }}
+            transition={{ ease: "easeOut", duration: 8 }}
+            >
+            <Link className="link" to="/"> Nabin Baral- Portfolio Website</Link>
+            </motion.h1>
             
           
             
-            <ul>
+            {/* <ul>
                 <li>
                 <Link className="link" to="/AboutMe"> About Me </Link>
                 </li>
@@ -37,7 +40,7 @@ const Navigation = () => {
                 <Link className="link" to="/ContactMe">  Contact </Link>
                 
                 </li>
-            </ul>
+            </ul> */}
 
             </nav>
             </StyledNav>
@@ -52,6 +55,7 @@ color:white;
 min-height:10vh;
 padding-left:1%;
 padding-right:1%;
+
 
 nav {
     display: flex;
@@ -72,8 +76,6 @@ nav {
     background-color:#83c5be;
     border-radius:15%;
 }
-
-
   
 }
 
@@ -82,9 +84,7 @@ ul {
     display:flex;
     justify-content:space-between;
     width:20%; 
-    list-style:none;
-    
-   
+    list-style:none;  
 }
 
 
@@ -96,7 +96,8 @@ ul {
 }
 
 
-background-color:#073b4c;
+background-color:#3a2618;
+
 
 
 `

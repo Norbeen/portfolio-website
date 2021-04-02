@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 
+
+
 const Project = () => {
+
+
+
     return (
         <StyledProject>
       
@@ -10,6 +15,7 @@ const Project = () => {
 {/* first project  */}
 
                <StyledProjects> 
+
                 <a href="https://github.com/Norbeen/ReactApp-BearBytes">
 
                     <h2> Bear Bites </h2> 
@@ -110,11 +116,25 @@ min-height:80vh;
 text-align:center;
 display:flex;
 flex-wrap:wrap;
+background-image:url("https://images.pexels.com/photos/3236265/pexels-photo-3236265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+background-size: cover;
+height: 100%;
+overflow: hidden;
 `
 
 const StyledProjects = styled.div`
-margin:5px;
-background-color:grey;
+/* border:solid black 2px; */
+border-radius:15%;
+margin:10px;
+box-shadow: 10px 5px 5px black;
+opacity:0.9;
+
+
+a, p, li{
+    text-decoration:none;
+    color:white;
+    
+}
 
 
 `

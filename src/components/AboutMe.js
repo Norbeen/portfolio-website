@@ -3,13 +3,13 @@ import Navigation from './Navigation';
 import Footer from './Footer'
 import styled from 'styled-components';
 import aboutMe from '../img/about-me.jpg';
-
+import {motion} from 'framer-motion';
 
 const AboutMe = () => {
 
     return (
-        <StyledAboutme>
-       
+        <StyledAboutme >
+ 
 
        <h1>Hi there,</h1>
 
@@ -17,29 +17,23 @@ const AboutMe = () => {
 
            <li>I am an international student. I came to usa in 2016 to pursue degree in computer science</li>
             <li>I graduated in Dec,2020. I am interested in software engineering and web development</li>
-            <li>I  <b> love writing blogs,  </b> you can check it out 
-                
-               
-                <a href ="http://norbeenbaral.blogspot.com"> here
-                </a>
-
-
+            <li>I  <a href ="http://norbeenbaral.blogspot.com"> love writing blog </a> 
+     
             </li>
 
-            <li>I  <b> like playing guitar, </b>  which I learned after I came to usa. Check it out 
-                
-            <a href ="http://youtube.com/nabinbaral"> here </a>
-
-
+            <li>I  <a href ="http://youtube.com/nabinbaral"> love playing guitar </a> which I learned after I came to usa.
+       
             </li>
 
             <li>My dream companies are: twitter, google, ibm and oracle but I am open to any companies and do my  best to contribute best as I can</li>
-            <li>Check out my <b> linkedin profile </b>    as well 
+            <li>Check out my  <a href ="https://www.linkedin.com/in/nabin-baral-05922ba2"> Linkedin  </a>   as well 
 
-        <a href ="https://www.linkedin.com/in/nabin-baral-05922ba2"> here  </a>
+       
           
             </li>
        </ul>
+
+     
         </StyledAboutme>
     )
 }
@@ -51,16 +45,44 @@ max-height:80vh;
 font-family: 'Gothic A1', sans-serif;
 font-size:20px;
 font-weight:bold;
+background-image: url("https://images.pexels.com/photos/317356/pexels-photo-317356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+background-size: cover;
+height: 100%;
+overflow: hidden;
+ 
 
-
+h1{
+    text-align:center;
+    margin-top:20px;
+    margin-left:2%;
+    padding:15px;
+    border:solid #7f5539 2px ;
+    width:40%;
+    background-color:#cdb19f;
+    border-radius:10px;
+    color:#0a0908;
+    opacity:0.88;
+ 
+} 
 
 
  li{
     list-style:none;
-    padding:10px;
+    padding:20px;
+    border:solid #7f5539 2px ;
+    width:45%;
+    background-color:#cdb19f;
+    border-radius:10px;
+    margin:10px;
+    color:#0a0908;
+    opacity:0.88;
+    margin-left:50%;
  }
-b {
-    text-decoration:underline;
+
+a{
+    text-decoration:none;
+    color:#fbfbed;
+    font-weight:bold;
 }
 
 `

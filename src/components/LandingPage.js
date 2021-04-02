@@ -2,22 +2,32 @@ import React from 'react'
 import styled from 'styled-components';
 import graduation from '../img/graduation.JPG'
 import {Link}  from "react-router-dom";
+import {
+    motion,
+    useSpring,
+    useMotionValue,
+    useMotionTemplate,
+    useAnimation
+  } from "framer-motion"
+
 
 const Top = () => {
+
+    const controls = useAnimation()
+    const backgroundImage ="https://images.pexels.com/photos/273238/pexels-photo-273238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260";
+  
     return (
         <StyledTop>
 
 
             <StyledText>
+   
 
-            <h1> Welcome to <span> my </span> page</h1>   
-            <h3> I am <span> Nabin </span> Baral </h3> 
-          
-           <h3>
-               graduate from <span> Morgan State University </span> on Dec 2020
-           </h3>
+            <h1> Hi there <span> my </span> friends</h1>   
 
-           <h3>Know about me here!! </h3>
+            <h1> I am <span> Nabin </span> Baral </h1> 
+         
+
 
            <br/>
 
@@ -26,31 +36,65 @@ const Top = () => {
 
    
             <Link className="link" to="/Achievement"> 
-            <button>
+            <motion.button
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            whileTap={{ scale: 0.8 }}
+            >
+
             Achievement 
-            </button>          
+            </motion.button>          
             </Link>
 
             <Link className="link" to="/Skill"> 
-            <button>
+
+            <motion.button
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            whileTap={{ scale: 0.8 }}
+            >
              Skill 
-            </button>     
+            </motion.button>     
             </Link>
 
-            <Link className="link" to="/Project"> 
-            <button>
+            <Link className="link" to="/Project">
+
+            <motion.button
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            whileTap={{ scale: 0.8 }}
+            >
              Project
-            </button>  
+            </motion.button> 
+
             </Link>  
+
+            <Link className="link" to="/AboutMe"> 
+            <motion.button
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}
+            whileTap={{ scale: 0.8 }}
+            >
+
+            About Me
+            </motion.button>          
+            </Link>
 
         </StyledButton>
 
             </StyledText>
 
 
-            <StyledImg>
-                <img src={graduation} alt="graduation image"/>
-            </StyledImg>
+            {/* <StyledImg>
+                <motion.img 
+             
+         
+                src={graduation} alt="graduation image"/>
+            </StyledImg> */}
 
         </StyledTop>
     )
@@ -61,25 +105,30 @@ const StyledTop = styled.div`
 
 
 
-max-height:80vh;
+min-height:80vh;
 display:flex;
 margin:auto;
 padding-top:0.3rem;
+background:url("https://images.pexels.com/photos/273238/pexels-photo-273238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+background-size: cover;
+height: 100%;
+overflow: hidden;
+
 `
 
 
 const StyledText = styled.div`
 
 width:50%;
-padding-left:2%;
+padding-left:50%;
 
 `
 
 
 
-const StyledImg = styled.div`
-width:60%;
-
+// const StyledImg = styled.div`
+/* width:60%; */
+/* 
 img{
 
     width:100%;
@@ -87,10 +136,10 @@ img{
     object-fit:cover;
     
     
-}
+} */
 
 
-`
+// `
 
 
 const StyledButton = styled.div`
@@ -105,20 +154,26 @@ text-decoration:none;
 
 button{
 
-    background-color:#073b4c;
+    background-color:#ad8164;
     color:white;
     display:flex;
     padding:20px;
-    margin:20px;
+    margin:30px;
     width:40%;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    box-shadow: 4px 4px 4px #999;
+    text-align: center; 
+    display:table-cell; 
+    vertical-align:middle
 
 }
 
-button:hover{
+/* button:hover{
     background-color:#83c5be;
-
-}
+} */
 
 `
+
 
 export default Top;

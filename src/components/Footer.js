@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import {motion} from 'framer-motion';
 
 const Footer = () => {
     return (
@@ -9,11 +9,44 @@ const Footer = () => {
         <StyledSocialMedia>       
            <ul>
 
-               <li><a href="https://github.com/norbeen">Github</a> </li>
-               <li>  <a href ="http://norbeenbaral.blogspot.com"> BlogSpot </a></li>
-               <li><a href ="http://youtube.com/nabinbaral"> Youtube</a></li>
-               <li><a href="https://www.linkedin.com/in/nabin-baral-05922ba2">Linkedin</a></li>
-               <li><a className="email" href="mailto:norbeen7@gmail.com">Email Me</a></li>
+            <motion.li
+            whileHover={{ scale: 2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}>
+
+            <a href="https://github.com/norbeen" target="blank">
+                Github
+            </a> 
+            </motion.li>
+
+               <motion.li
+            whileHover={{ scale: 2  }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}>  
+            <a href ="http://norbeenbaral.blogspot.com" target="blank" > BlogSpot </a>
+            </motion.li>
+
+
+               <motion.li
+            whileHover={{ scale: 2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}>
+                <a href ="http://youtube.com/nabinbaral" target="blank" > Youtube</a>
+                </motion.li>
+
+               <motion.li
+            whileHover={{ scale: 2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}>
+                <a href="https://www.linkedin.com/in/nabin-baral-05922ba2" target="blank" >Linkedin</a>
+            </motion.li>
+
+               <motion.li
+            whileHover={{ scale: 2 }}
+            onHoverStart={e => {}}
+            onHoverEnd={e => {}}>
+                <a className="email" href="mailto:norbeen7@gmail.com" target="blank">Email Me</a>
+                </motion.li>
            </ul>
            </StyledSocialMedia>
 
@@ -24,7 +57,7 @@ const Footer = () => {
 
 const StyledFooter = styled.div`
 min-height:10vh;
-background-color:#073b4c;
+background-color:#3a2618;
 display:flex;
 justify-content:space-around;
 
@@ -52,18 +85,18 @@ ul{
         text-decoration:none;
     }
 
-
+/* 
     a:hover{
     background-color:#83c5be;
     border-radius:15%;
  
-}
+} */
 
-.email:hover{
+/* .email:hover{
     background-color:#83c5be;
     border-radius:15%;
  
-}
+} */
 
 `
 
