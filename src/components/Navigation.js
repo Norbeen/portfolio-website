@@ -26,21 +26,7 @@ const Navigation = () => {
             >
             <Link className="link" to="/"> Nabin Baral- Portfolio Website</Link>
             </motion.h1>
-            
-          
-            
-            {/* <ul>
-                <li>
-                <Link className="link" to="/AboutMe"> About Me </Link>
-                </li>
-
-
-                <li>
-
-                <Link className="link" to="/ContactMe">  Contact </Link>
-                
-                </li>
-            </ul> */}
+        
 
             </nav>
             </StyledNav>
